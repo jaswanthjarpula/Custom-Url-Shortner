@@ -24,9 +24,9 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 // Logging in development
-if (process.env.NODE_ENV !== 'production') {
-  app.use(morgan('dev'))
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   app.use(morgan('dev'))
+// }
 
 // Routes
 app.use('/urls', urlRoutes)
